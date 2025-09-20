@@ -1,0 +1,14 @@
+<h1>Lista de Posts: </h1>
+<a href="/postagens/postar"><button>Criar post</button></a>
+{{#each posts}}
+    <h1>Id: {{id}}</h1>
+    <h2>Titulo: {{titulo}}</h2>
+    <p>Conteúdo: {{conteudo}}</p>
+    <p>Data: {{CreatedAt}}</p>
+    <p>Criador: {{usuario}}</p>
+    
+    <a href="/postagens/deletar/{{id}}"><button>Deletar</button></a>
+    <a href="/postagens/alterar/{{id}}"><button>Alterar</button></a>
+    <hr>
+{{/each}}
+<a href='/usuario/logout'><button>Sair</button></a>
